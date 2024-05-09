@@ -13,10 +13,37 @@
         
     </header>
     <main>
-        <h1> alvesjanecleide24@gmail.com</h1>
-    </main>
+        <form onsubmit="event.preventDefault()">
+
+        <fieldset>
+            <label for="input-name">NAME</label>
+             <input type="text" name="input-name" id="input-name" required minlength="3">
+        </fieldset>
+
+        <fieldset>
+            <label form="input -email"> E-mail</label>
+            <input type="e-mail" name="input-email" id="input-email" required>
+        </fieldset>
+
+        <fieldset>
+    <label for="input - tel">telefone</label>
+    <input type="tel" name="input-tel" id="input-tel" placeholder= "(99) 99999-9999" required parttern="^(\d{2}) \d{5}-\d{4}$" maxlength="15">
+ 
+</fieldset>
+
+   <fieldset>
+   <label for="input-msg">Mensagem</label>
+   <textarea name="input-msg" id="input-msg" cols="30" rows="10"></textarea>
     <footer>
         <a href="portfolio.html"target="_self" rel="prev">voltar</a>
+
+        <center>
+            <input type="submit" value="ENVIAR" class="button" onclick="enviarFormulario()">
+        </center>
+    </fieldset>
     </footer>
+</form>
+    
+    
 </body>
 </html>
